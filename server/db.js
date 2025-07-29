@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 // const { string } = require('zod')
 
-mongoose.connect('mongodb+srv://bspreddy:bspreddy%402003@cluster0.dgx863o.mongodb.net/')
+mongoose.connect('here give mongoDb connection string')
 const todoSchema = mongoose.Schema({
     title:String,
     description:String,
