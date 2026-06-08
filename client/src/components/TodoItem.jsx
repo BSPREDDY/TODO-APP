@@ -11,7 +11,7 @@ export function TodoItem({ todo, onTodoUpdated, onTodoDeleted }) {
   const toggleComplete = async () => {
     try {
       setLoading(true)
-      const response = await fetch(`http://localhost:3000/update/${todo._id}`, {
+      const response = await fetch(`https://todo-app-backend-xxcz.onrender.com/update/${todo._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ export function TodoItem({ todo, onTodoUpdated, onTodoDeleted }) {
 
     try {
       setLoading(true)
-      const response = await fetch(`http://localhost:3000/todo/${todo._id}`, {
+      const response = await fetch(`https://todo-app-backend-xxcz.onrender.com/todo/${todo._id}`, {
         method: "DELETE",
       })
 
@@ -67,7 +67,7 @@ export function TodoItem({ todo, onTodoUpdated, onTodoDeleted }) {
 
     try {
       setLoading(true)
-      const response = await fetch(`http://localhost:3000/todo/${todo._id}`, {
+      const response = await fetch(`https://todo-app-backend-xxcz.onrender.com/todo/${todo._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
