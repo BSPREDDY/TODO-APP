@@ -21,7 +21,7 @@ function App() {
     try {
       setLoading(true)
       setError(null)
-      const response = await fetch("http://localhost:3000/todos")
+      const response = await fetch("https://todo-app-backend-xxcz.onrender.com/todos")
 
       if (!response.ok) {
         throw new Error("Failed to fetch todos")
